@@ -22,6 +22,7 @@ RUN zypper ref && \
 		texlive-courier-fonts \
 		texlive-caption \
 		texlive-glossaries \
+		texlive-eqlist \
 		&& \
 	zypper clean -a
 
