@@ -3,7 +3,7 @@ FROM registry.opensuse.org/opensuse/tumbleweed
 #		texlive-* && \
 RUN zypper ref && \
     zypper -n install \
-		make \
+		make which \
 		inter-fonts \
 		texlive-pdftex-bin texlive-etoolbox texlive-collection-publishers \
 		texlive-dashrule texlive-multirow texlive-hyperref texlive-paracol \
@@ -21,8 +21,8 @@ RUN zypper ref && \
 		texlive-courier \
 		texlive-courier-fonts \
 		texlive-caption \
-		texlive-glossaries \
-		texlive-eqlist \
+		texlive-glossaries texlive-glossaries-german \
+		texlive-eqlist texlive-minted python310-Pygments \
 		&& \
 	zypper clean -a
 
