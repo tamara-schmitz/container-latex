@@ -12,7 +12,7 @@ RUN zypper ref && \
 		texlive-amsmath texlive-siunitx \
 		texlive-chktex-bin \
 		xindy \
-		texlive-latex texlive-latexmk-bin \
+		texlive-latex texlive-latexmk-bin texlive-luatex-bin \
 		texlive-babel-german \
 		texlive-koma-script \
 		texlive-listing \
