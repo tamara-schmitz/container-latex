@@ -23,7 +23,7 @@ RUN zypper ref && \
 		texlive-caption \
 		texlive-glossaries texlive-glossaries-german \
 		texlive-eqlist texlive-minted python310-Pygments \
-		texlive-aeguill texlive-plantuml plantuml \
+		plantuml \
 		&& \
 	zypper clean -a
 
