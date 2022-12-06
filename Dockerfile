@@ -2,7 +2,7 @@ FROM registry.opensuse.org/opensuse/tumbleweed
 
 #		texlive-* && \
 RUN zypper ref && \
-    zypper -n install \
+    zypper -n install --no-recommends \
 		make which \
 		inter-fonts \
 		texlive-pdftex-bin texlive-etoolbox texlive-collection-publishers \
@@ -23,7 +23,7 @@ RUN zypper ref && \
 		texlive-caption \
 		texlive-glossaries texlive-glossaries-german \
 		texlive-eqlist texlive-minted python310-Pygments \
-		texlive-plantuml \
+		texlive-plantuml plantuml \
 		&& \
 	zypper clean -a
 
