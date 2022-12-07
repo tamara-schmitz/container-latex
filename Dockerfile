@@ -23,7 +23,7 @@ RUN zypper ref && \
 		texlive-caption \
 		texlive-glossaries texlive-glossaries-german \
 		texlive-eqlist texlive-minted python310-Pygments \
-		plantuml texlive-epstopdf-bin \
+		plantuml graphviz texlive-epstopdf-bin \
 		&& \
 	zypper clean -a
 
